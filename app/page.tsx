@@ -78,16 +78,16 @@ export default function Home() {
               <Button
                 size="lg"
                 className="h-12 rounded-md px-5 text-[15px]"
-                render={<a href="mailto:hello@furfotos.com" />}
+                render={<a href="mailto:furfotos@gmail.com" />}
               >
                 <Mail />
                 Write to us
               </Button>
               <a
-                href="mailto:hello@furfotos.com"
+                href="mailto:furfotos@gmail.com"
                 className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
               >
-                hello@furfotos.com
+                furfotos@gmail.com
               </a>
             </div>
           </section>

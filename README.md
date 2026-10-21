@@ -16,7 +16,7 @@ npm run lint
 npm run build
 ```
 
-The address on the page is `hello@furfotos.com`. Change it in `app/page.tsx` if you use a different inbox.
+The address on the page is `furfotos@gmail.com`. Change it in `app/page.tsx` if you use a different inbox.
 
 ## Put it on furfotos.com
 
