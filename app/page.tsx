@@ -5,9 +5,9 @@ import { FilmStrip } from "@/components/film-strip";
 import { Button } from "@/components/ui/button";
 
 const facts = [
-  { label: "Who sits", value: "Dogs, cats, and company" },
-  { label: "Where", value: "Studio and at home" },
-  { label: "What you keep", value: "Prints, not just files" },
+  { label: "Photos", value: "The stills you meant to keep" },
+  { label: "Videos", value: "The clips you almost lost" },
+  { label: "One life", value: "In the order it happened" },
 ];
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
         <main className="grid flex-1 items-center gap-12 py-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16 lg:py-10">
           <section className="max-w-xl">
             <p className="font-mono text-[11px] tracking-[0.32em] text-muted-foreground uppercase">
-              Pet portraits
+              Photo and video journal
             </p>
             <h1 className="mt-4 text-foreground">
               <span className="block w-full max-w-[22rem] rounded-[1.75rem] bg-white p-2 shadow-[0_22px_40px_-24px_rgba(28,20,15,0.45)] ring-1 ring-black/10">
@@ -58,9 +58,9 @@ export default function Home() {
               </span>
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-pretty text-foreground/85">
-              Portraits of the dogs, cats, and other animals who run the house.
-              Galleries, booking, and prints will live here. The first sittings
-              are already on the books.
+              A journal of your pet’s life. Photos and videos, kept in the
+              order they happened — the first morning, the ordinary Tuesday,
+              the clip you almost didn’t save. The pages open soon.
             </p>
 
             <ul className="mt-8 grid gap-5 border-t border-foreground/15 pt-6 sm:grid-cols-3">
@@ -81,7 +81,7 @@ export default function Home() {
                 render={<a href="mailto:hello@furfotos.com" />}
               >
                 <Mail />
-                Write to the studio
+                Write to us
               </Button>
               <a
                 href="mailto:hello@furfotos.com"
@@ -97,7 +97,7 @@ export default function Home() {
 
         <footer className="flex flex-col gap-2 border-t border-foreground/10 pt-4 font-mono text-[10px] tracking-[0.18em] text-muted-foreground uppercase sm:flex-row sm:items-center sm:justify-between">
           <p>furfotos.com</p>
-          <p>The first frames are still in the camera.</p>
+          <p>The journal is still blank.</p>
         </footer>
       </div>
     </div>

@@ -19,7 +19,7 @@ const display = Fraunces({
 });
 
 const description =
-  "FurFotos photographs the dogs, cats, and other animals who run the house. Galleries, booking, and prints are coming soon.";
+  "FurFotos is a photo and video journal of your pet’s life, kept in the order it happened. Coming soon.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://furfotos.com"),

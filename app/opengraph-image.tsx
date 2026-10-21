@@ -2,7 +2,8 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
-export const alt = "FurFotos, pet portraits, coming soon";
+export const alt =
+  "FurFotos, a photo and video journal of your pet’s life, coming soon";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -36,12 +37,12 @@ export default async function Image() {
             style={{
               display: "flex",
               fontSize: 22,
-              letterSpacing: 6,
+              letterSpacing: 4,
               textTransform: "uppercase",
               color: "#3c332c",
             }}
           >
-            Pet portraits
+            Photo and video
           </div>
           <div
             style={{
@@ -63,7 +64,7 @@ export default async function Image() {
               color: "#3f342c",
             }}
           >
-            Portraits for the animals who run the house.
+            A journal of your pet’s life.
           </div>
         </div>
         <div

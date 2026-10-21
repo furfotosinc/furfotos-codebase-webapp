@@ -1,7 +1,7 @@
 const frames: { id: string; note: string; leak?: boolean; fog?: boolean }[] = [
-  { id: "01", note: "Unexposed" },
-  { id: "02", note: "Sitter pending", leak: true },
-  { id: "03", note: "First proof", fog: true },
+  { id: "01", note: "First morning" },
+  { id: "02", note: "Ordinary day", leak: true },
+  { id: "03", note: "On video", fog: true },
 ];
 
 function Sprockets() {
@@ -30,7 +30,7 @@ export function FilmStrip() {
           }}
         />
         <p className="relative px-1 pb-2 text-center font-mono text-[10px] tracking-[0.16em] text-[#3f1d0e] uppercase sm:tracking-[0.2em]">
-          FurFotos · Coming soon
+          FurFotos · Life journal
         </p>
         <div className="relative flex flex-col gap-1.5">
           {frames.map((frame) => (
@@ -54,11 +54,11 @@ export function FilmStrip() {
           ))}
         </div>
         <p className="relative px-1 pt-2 text-center font-mono text-[9px] tracking-[0.28em] text-[#3f1d0e] uppercase sm:text-[10px]">
-          01A · Held to the light
+          Photo · Video · Soon
         </p>
       </div>
       <figcaption className="mt-4 text-center font-mono text-[10px] tracking-[0.22em] text-muted-foreground uppercase">
-        Color negative · three empty frames
+        Three blank pages from a pet’s life
       </figcaption>
     </figure>
   );

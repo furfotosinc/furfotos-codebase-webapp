@@ -1,6 +1,6 @@
 # FurFotos
 
-Coming-soon page for [furfotos.com](https://furfotos.com), a pet portrait studio. The page is a light table with an unexposed film strip: the pictures are not public yet, and the studio is.
+Coming-soon page for [furfotos.com](https://furfotos.com), a photo and video journal of your pet’s life. The page is a light table with a blank film strip: the journal is not open yet.
 
 ## Run it locally
 
@@ -16,7 +16,7 @@ npm run lint
 npm run build
 ```
 
-The studio address on the page is `hello@furfotos.com`. Change it in `app/page.tsx` if you use a different inbox.
+The address on the page is `hello@furfotos.com`. Change it in `app/page.tsx` if you use a different inbox.
 
 ## Put it on furfotos.com
 
