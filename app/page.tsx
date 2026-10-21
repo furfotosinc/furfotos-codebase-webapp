@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { FilmStrip } from "@/components/film-strip";
 import { Button } from "@/components/ui/button";
@@ -41,11 +42,18 @@ export default function Home() {
             <p className="font-mono text-[11px] tracking-[0.32em] text-muted-foreground uppercase">
               Pet portraits
             </p>
-            <h1 className="font-display mt-4 text-foreground">
-              <span className="block text-[clamp(4.25rem,11vw,7.25rem)] leading-[0.88] tracking-[-0.04em]">
-                FurFotos
+            <h1 className="mt-4 text-foreground">
+              <span className="block w-full max-w-[22rem] rounded-[1.75rem] bg-white p-2 shadow-[0_22px_40px_-24px_rgba(28,20,15,0.45)] ring-1 ring-black/10">
+                <Image
+                  src="/furfotos-logo.png"
+                  alt="FurFotos"
+                  width={960}
+                  height={799}
+                  priority
+                  className="h-auto w-full"
+                />
               </span>
-              <span className="mt-3 block text-[clamp(2.6rem,6vw,4.4rem)] leading-[1.02] tracking-[-0.03em] text-rust italic">
+              <span className="font-display mt-6 block text-[clamp(2.6rem,6vw,4.4rem)] leading-[1.02] tracking-[-0.03em] text-rust italic">
                 Coming soon
               </span>
             </h1>

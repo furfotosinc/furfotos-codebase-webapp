@@ -1,10 +1,15 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 
 export const alt = "FurFotos, pet portraits, coming soon";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function Image() {
+export default async function Image() {
+  const logo = await readFile(join(process.cwd(), "public/furfotos-logo.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -14,7 +19,8 @@ export default function Image() {
           display: "flex",
           background: "#d7e4ea",
           color: "#1c140f",
-          padding: "64px",
+          padding: "56px",
+          alignItems: "center",
         }}
       >
         <div
@@ -22,54 +28,53 @@ export default function Image() {
             display: "flex",
             flex: 1,
             flexDirection: "column",
-            justifyContent: "space-between",
-            paddingRight: "48px",
+            justifyContent: "center",
+            paddingRight: "40px",
           }}
         >
           <div
             style={{
               display: "flex",
-              fontSize: 20,
+              fontSize: 22,
               letterSpacing: 6,
               textTransform: "uppercase",
-              color: "#4e433b",
+              color: "#3c332c",
             }}
           >
             Pet portraits
           </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ display: "flex", fontSize: 108, lineHeight: 0.9 }}>
-              FurFotos
-            </div>
-            <div
-              style={{
-                display: "flex",
-                marginTop: 12,
-                fontSize: 64,
-                fontStyle: "italic",
-                color: "#8c3418",
-              }}
-            >
-              Coming soon
-            </div>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 18,
+              fontSize: 84,
+              fontStyle: "italic",
+              color: "#8c3418",
+              lineHeight: 1,
+            }}
+          >
+            Coming soon
           </div>
-          <div style={{ display: "flex", fontSize: 26, color: "#3f342c" }}>
+          <div
+            style={{
+              display: "flex",
+              marginTop: 22,
+              fontSize: 28,
+              color: "#3f342c",
+            }}
+          >
             Portraits for the animals who run the house.
           </div>
         </div>
         <div
           style={{
-            width: 300,
             display: "flex",
-            flexDirection: "column",
-            background: "#e3894a",
-            padding: 18,
-            gap: 12,
-          }}
-        >
-          <div style={{ display: "flex", flex: 1, background: "#140e0b" }} />
-          <div style={{ display: "flex", flex: 1, background: "#140e0b" }} />
-          <div style={{ display: "flex", flex: 1, background: "#140e0b" }} />
+            background: "#ffffff",
+            borderRadius: 28,
+          padding: 22,
+        }}
+      >
+        <img src={logoSrc} width={400} height={333} alt="" />
         </div>
       </div>
     ),
