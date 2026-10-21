@@ -60,27 +60,27 @@
   --lightbox: #d7e4ea;
   --lightbox-hot: #f5f9fb;
   --ink: #1c140f;
-  --rust: #8c3418;
+  --rust: #e8a06a;
   --film: #e3894a;
   --film-deep: #c45a28;
-  --negative: #140e0b;
-  --background: #d7e4ea;
-  --foreground: #1c140f;
-  --card: #f5f9fb;
-  --card-foreground: #1c140f;
-  --popover: #f5f9fb;
-  --popover-foreground: #1c140f;
-  --primary: #1c140f;
-  --primary-foreground: #f6f1e8;
-  --secondary: #c5d5de;
-  --secondary-foreground: #1c140f;
-  --muted: #c9d7df;
-  --muted-foreground: #3c332c;
+  --negative: #0a0706;
+  --background: #000000;
+  --foreground: #f6f1e8;
+  --card: #14110f;
+  --card-foreground: #f6f1e8;
+  --popover: #14110f;
+  --popover-foreground: #f6f1e8;
+  --primary: #f6f1e8;
+  --primary-foreground: #1c140f;
+  --secondary: #1c1814;
+  --secondary-foreground: #f6f1e8;
+  --muted: #1c1814;
+  --muted-foreground: #d4cbc2;
   --accent: #f0d3b8;
   --accent-foreground: #1c140f;
   --destructive: #9f2d2d;
-  --border: rgb(28 20 15 / 16%);
-  --input: rgb(28 20 15 / 18%);
+  --border: rgb(246 241 232 / 16%);
+  --input: rgb(246 241 232 / 18%);
   --ring: #c45a28;
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
@@ -141,7 +141,7 @@
   }
   html {
     @apply font-sans;
-    color-scheme: light;
+    color-scheme: dark;
   }
 }
 

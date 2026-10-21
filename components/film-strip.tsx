@@ -10,7 +10,7 @@ function Sprockets() {
       {Array.from({ length: 4 }, (_, index) => (
         <span
           key={index}
-          className="h-2.5 w-3 rounded-[2px] bg-lightbox shadow-[inset_0_1px_1px_rgba(28,20,15,0.45)] sm:h-3 sm:w-3.5"
+          className="h-2.5 w-3 rounded-[2px] bg-black shadow-[inset_0_1px_1px_rgba(0,0,0,0.65)] sm:h-3 sm:w-3.5"
         />
       ))}
     </div>
@@ -20,7 +20,7 @@ function Sprockets() {
 export function FilmStrip() {
   return (
     <figure className="mx-auto w-full max-w-[22rem] lg:max-w-[24rem] lg:-rotate-2 lg:transition-transform">
-      <div className="relative overflow-hidden rounded-[2px] bg-gradient-to-b from-[#f0a56c] via-film to-film-deep px-2 py-2.5 shadow-[0_28px_50px_-28px_rgba(40,22,8,0.7),inset_0_1px_0_rgba(255,255,255,0.35)] ring-1 ring-black/15">
+      <div className="relative overflow-hidden rounded-[2px] bg-gradient-to-b from-[#f0a56c] via-film to-film-deep px-2 py-2.5 shadow-[0_30px_50px_-20px_rgba(0,0,0,0.9),inset_0_1px_0_rgba(255,255,255,0.35)] ring-1 ring-white/15">
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0 opacity-25 mix-blend-multiply"

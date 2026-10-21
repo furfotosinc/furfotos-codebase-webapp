@@ -18,8 +18,8 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "#d7e4ea",
-          color: "#1c140f",
+          background: "#000000",
+          color: "#f6f1e8",
           padding: "56px",
           alignItems: "center",
         }}
@@ -39,7 +39,7 @@ export default async function Image() {
               fontSize: 22,
               letterSpacing: 4,
               textTransform: "uppercase",
-              color: "#3c332c",
+              color: "#d4cbc2",
             }}
           >
             Photo and video
@@ -50,7 +50,7 @@ export default async function Image() {
               marginTop: 18,
               fontSize: 84,
               fontStyle: "italic",
-              color: "#8c3418",
+              color: "#e8a06a",
               lineHeight: 1,
             }}
           >
@@ -61,7 +61,7 @@ export default async function Image() {
               display: "flex",
               marginTop: 22,
               fontSize: 28,
-              color: "#3f342c",
+              color: "#f6f1e8",
             }}
           >
             A journal of your pet’s life.

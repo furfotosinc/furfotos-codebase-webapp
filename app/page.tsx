@@ -12,7 +12,7 @@ const facts = [
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-svh flex-1 flex-col overflow-hidden bg-[radial-gradient(ellipse_at_50%_38%,var(--lightbox-hot),var(--lightbox)_58%,#c3d3dc)] text-foreground">
+    <div className="relative flex min-h-svh flex-1 flex-col overflow-hidden bg-black text-foreground">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-3 hidden sm:block"
@@ -28,7 +28,7 @@ export default function Home() {
           <Link href="/" className="font-display text-xl tracking-tight sm:text-2xl">
             FurFotos
           </Link>
-          <p className="inline-flex items-center gap-2 rounded-full border border-foreground/15 bg-white/45 px-3 py-1.5 font-mono text-[10px] tracking-[0.2em] uppercase">
+          <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 font-mono text-[10px] tracking-[0.2em] text-foreground uppercase">
             <span className="relative flex size-1.5">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-film opacity-70 motion-reduce:hidden" />
               <span className="relative size-1.5 rounded-full bg-film-deep" />
@@ -43,7 +43,7 @@ export default function Home() {
               Photo and video journal
             </p>
             <h1 className="mt-4 text-foreground">
-              <span className="block w-full max-w-[22rem] rounded-[1.75rem] bg-white p-2 shadow-[0_22px_40px_-24px_rgba(28,20,15,0.45)] ring-1 ring-black/10">
+              <span className="block w-full max-w-[22rem] rounded-[1.75rem] bg-white p-2 shadow-[0_28px_50px_-18px_rgba(0,0,0,0.85)] ring-1 ring-white/15">
                 <Image
                   src="/furfotos-logo.png"
                   alt="FurFotos"
