@@ -48,7 +48,7 @@ export default function Home() {
                   src="/furfotos-logo.png"
                   alt="FurFotos"
                   width={960}
-                  height={799}
+                  height={844}
                   priority
                   className="h-auto w-full"
                 />

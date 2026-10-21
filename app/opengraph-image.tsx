@@ -72,10 +72,10 @@ export default async function Image() {
             display: "flex",
             background: "#ffffff",
             borderRadius: 28,
-          padding: 22,
-        }}
-      >
-        <img src={logoSrc} width={400} height={333} alt="" />
+            padding: 22,
+          }}
+        >
+          <img src={logoSrc} width={400} height={352} alt="" />
         </div>
       </div>
     ),
