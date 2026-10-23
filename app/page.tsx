@@ -12,7 +12,13 @@ const facts = [
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-svh flex-1 flex-col overflow-hidden bg-black text-foreground">
+    <div
+      className="relative flex min-h-svh flex-1 flex-col overflow-hidden bg-sea text-foreground"
+      style={{
+        backgroundImage:
+          "radial-gradient(ellipse 68% 46% at 82% -8%, rgb(86 186 196 / 20%), transparent 62%), linear-gradient(180deg, #0e6486 0%, #0d7384 52%, #0c6a78 100%)",
+      }}
+    >
       <div
         aria-hidden
         className="pointer-events-none absolute inset-3 hidden sm:block"

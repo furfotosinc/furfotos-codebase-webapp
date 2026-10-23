@@ -18,7 +18,7 @@ export default async function Image() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "#000000",
+          background: "#0d7384",
           color: "#f6f1e8",
           padding: "56px",
           alignItems: "center",

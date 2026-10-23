@@ -10,7 +10,7 @@ function Sprockets() {
       {Array.from({ length: 4 }, (_, index) => (
         <span
           key={index}
-          className="h-2.5 w-3 rounded-[2px] bg-black shadow-[inset_0_1px_1px_rgba(0,0,0,0.65)] sm:h-3 sm:w-3.5"
+          className="h-2.5 w-3 rounded-[2px] bg-sea shadow-[inset_0_1px_1px_rgba(0,0,0,0.35)] sm:h-3 sm:w-3.5"
         />
       ))}
     </div>
